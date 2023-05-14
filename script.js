@@ -1,6 +1,6 @@
 // Daftar menu kopi
 var menu = [
-    { name: "Espresso", price: 10 },
+    { name: "Espresso", price: "10K" },
     { name: "Cappuccino", price: 12 },
     { name: "Latte", price: 12 },
     { name: "Mocha", price: 15 },
