@@ -17,7 +17,7 @@ function showMenu() {
 
     for (var i = 0; i < menu.length; i++) {
         var menuItem = document.createElement("li");
-        menuItem.innerHTML = menu[i].name + " - $" + menu[i].price;
+        menuItem.innerHTML = menu[i].name + " - " + menu[i].price;
         menuItem.setAttribute("onclick", "addToOrder(" + i + ")");
         menuList.appendChild(menuItem);
     }
