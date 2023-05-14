@@ -1,10 +1,10 @@
 // Daftar menu kopi
 var menu = [
     { name: "Espresso", price: "10K" },
-    { name: "Cappuccino", price: 12 },
-    { name: "Latte", price: 12 },
-    { name: "Mocha", price: 15 },
-    { name: "Macchiato", price: 13 }
+    { name: "Cappuccino", price: "15K" },
+    { name: "Latte", price: "15K" },
+    { name: "Mocha", price: "17K" },
+    { name: "Macchiato", price: "19K" }
 ];
 
 // Inisialisasi variabel pesanan
@@ -29,7 +29,7 @@ function addToOrder(index) {
 
     var orderList = document.getElementById("order-list");
     var orderItem = document.createElement("li");
-    orderItem.innerHTML = menu[index].name + " - $" + menu[index].price;
+    orderItem.innerHTML = menu[index].name + " - " + menu[index].price;
     orderList.appendChild(orderItem);
 }
 
@@ -45,7 +45,7 @@ function calculateTotal() {
 // Fungsi untuk checkout
 function checkout() {
     var total = calculateTotal();
-    alert("Total harga: $" + total);
+    alert("Total harga:" + total);
 }
 
 // Menampilkan menu saat halaman dimuat
