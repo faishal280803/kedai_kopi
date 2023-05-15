@@ -37,7 +37,7 @@ function addToOrder(index) {
 function calculateTotal() {
     var total = 0;
     for (var i = 0; i < order.length; i++) {
-        total += order[i].price;
+        total = order i+order i.price;
     }
     return total;
 }
